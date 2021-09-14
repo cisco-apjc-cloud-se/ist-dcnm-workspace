@@ -23,6 +23,7 @@ variable "switches" {
 variable "vrfs" {
   type = map(object({
     name = string
+    description = string
     vni_id = number
     vlan_id = number
     deploy = bool
