@@ -2,9 +2,9 @@ dcnm_fabric = "DC3"
 
 ### FABRIC INVENTORY ###
 switches = [
-  DC3-LEAF-1
-  DC3-LEAF-2
-  DC3-BORDER-1
+  DC3-LEAF-1,
+  DC3-LEAF-2,
+  DC3-BORDER-1,
   DC3-BORDER-2
 ]
 
@@ -17,9 +17,9 @@ vrfs = {
     vlan_id = 3001
     deploy = true
     attached_switches = [
-      DC3-LEAF-1
-      DC3-LEAF-2
-      DC3-BORDER-1
+      DC3-LEAF-1,
+      DC3-LEAF-2,
+      DC3-BORDER-1,
       DC3-BORDER-2
     ]
   }
@@ -30,9 +30,9 @@ vrfs = {
     vlan_id = 3002
     deploy = true
     attached_switches = [
-      DC3-LEAF-1
-      DC3-LEAF-2
-      DC3-BORDER-1
+      DC3-LEAF-1,
+      DC3-LEAF-2,
+      DC3-BORDER-1,
       DC3-BORDER-2
     ]
   }
@@ -51,9 +51,9 @@ networks = {
     vlan_id = 2101
     deploy = true
     attached_switches = [
-      DC3-LEAF-1
-      DC3-LEAF-2
-      DC3-BORDER-1
+      DC3-LEAF-1,
+      DC3-LEAF-2,
+      DC3-BORDER-1,
       DC3-BORDER-2
     ]
   }
@@ -66,9 +66,9 @@ networks = {
     vlan_id = 2102
     deploy = true
     attached_switches = [
-      DC3-LEAF-1
-      DC3-LEAF-2
-      DC3-BORDER-1
+      DC3-LEAF-1,
+      DC3-LEAF-2,
+      DC3-BORDER-1,
       DC3-BORDER-2
     ]
   }
