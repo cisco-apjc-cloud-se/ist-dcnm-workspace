@@ -53,7 +53,7 @@ locals {
 }
 
 ## Build New VRFs ###
-resource "dcnm_vrf" "first" {
+resource "dcnm_vrf" "vrfs" {
   for_each = var.vrfs
 
   fabric_name             = var.dcnm_fabric
@@ -132,4 +132,6 @@ resource "dcnm_network" "networks" {
       // switch_ports  = attachments.value["switch_ports"]
     }
   }
+
+  depends_on = [dcnm_vrf.vrfs]
 }
