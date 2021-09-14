@@ -47,8 +47,8 @@ networks = {
     description = "Terraform Intersight Demo Network #1"
     vrf_name = "TFCB-VRF-1"
     ip_subnet = "192.168.101.1/24"
-    vni_id = 32101
-    vlan_id = 2101
+    vni_id = 33101
+    vlan_id = 3101
     deploy = true
     attached_switches = [
       "DC3-LEAF-1",
@@ -62,8 +62,8 @@ networks = {
     description = "Terraform Intersight Demo Network #2"
     vrf_name = "TFCB-VRF-1"
     ip_subnet = "192.168.102.1/24"
-    vni_id = 32102
-    vlan_id = 2102
+    vni_id = 33102
+    vlan_id = 3102
     deploy = true
     attached_switches = [
       "DC3-LEAF-1",
