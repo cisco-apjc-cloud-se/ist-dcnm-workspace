@@ -42,7 +42,7 @@ vrfs = {
 
 ### NETWORKS ###
 networks = {
-  IST-NETWORK-1 = {
+  TFCB-NET-1 = {
     name = "TFCB-NET-1"
     description = "Terraform Intersight Demo Network #1"
     vrf_name = "TFCB-VRF-1"
@@ -57,7 +57,7 @@ networks = {
       "DC3-BORDER-2"
     ]
   }
-  IST-NETWORK-2 = {
+  TFCB-NET-2 = {
     name = "TFCB-NET-2"
     description = "Terraform Intersight Demo Network #2"
     vrf_name = "TFCB-VRF-1"
