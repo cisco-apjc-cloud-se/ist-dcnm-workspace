@@ -86,4 +86,17 @@ networks = {
       "DC3-BORDER-2"
     ]
   }
+  TFCB-NET-3 = {
+    name = "TFCB-NET-3"
+    description = "Terraform Intersight Demo Network #3"
+    vrf_name = "TFCB-VRF-1"
+    ip_subnet = "192.168.103.1/24"
+    vni_id = 33103
+    vlan_id = 3103
+    deploy = true
+    attached_switches = [
+      "DC3-LEAF-1",
+      "DC3-LEAF-2"
+    ]
+  }
 }
