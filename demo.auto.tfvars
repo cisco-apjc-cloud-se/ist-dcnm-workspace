@@ -66,9 +66,9 @@ networks = {
     deploy = true
     attached_switches = [
       "DC3-LEAF-1",
-      "DC3-LEAF-2",
-      "DC3-BORDER-1",
-      "DC3-BORDER-2"
+      "DC3-LEAF-2"
+      # "DC3-BORDER-1",
+      # "DC3-BORDER-2"
     ]
   }
   TFCB-NET-2 = {
@@ -81,9 +81,9 @@ networks = {
     deploy = true
     attached_switches = [
       "DC3-LEAF-1",
-      "DC3-LEAF-2",
-      "DC3-BORDER-1",
-      "DC3-BORDER-2"
+      "DC3-LEAF-2"
+      # "DC3-BORDER-1",
+      # "DC3-BORDER-2"
     ]
   }
   TFCB-NET-3 = {
