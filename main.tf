@@ -107,8 +107,8 @@ resource "dcnm_interface" "vpc" {
   mode                    = "active"
   bpdu_gaurd_flag         = "true"
   mtu                     = "jumbo"
-  // vpc_peer1_allowed_vlans = "none"
-  // vpc_peer2_allowed_vlans = "none"
+  vpc_peer1_allowed_vlans = "none"
+  vpc_peer2_allowed_vlans = "none"
   // vpc_peer1_access_vlans  = "10"
   // vpc_peer2_access_vlans  = "20"
   vpc_peer1_interface     = each.value.switch1.ports
