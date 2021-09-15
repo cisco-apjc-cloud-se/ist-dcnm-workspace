@@ -39,6 +39,20 @@ vrfs = {
 }
 
 ### INTERFACES ###
+vpc_interfaces = {
+  vpc10 = {
+    name = "vpc10"
+    vpc_id = 10
+    switch1 = {
+      name = "DC3-LEAF-1"
+      ports = ["Eth1/10"]
+      }
+    switch2 = {
+      name = "DC3-LEAF-2"
+      ports = ["Eth1/10"]
+      }
+  }
+}
 
 ### NETWORKS ###
 networks = {

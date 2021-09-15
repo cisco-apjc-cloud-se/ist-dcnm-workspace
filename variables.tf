@@ -31,6 +31,21 @@ variable "vrfs" {
   }))
 }
 
+variable "vpc_interfaces" {
+  type = map(object({
+    name = string
+    vpc_id = number
+    switch1 = map(object({
+      name = string
+      ports = list(string)
+      }))
+    switch2 = map(object({
+      name = string
+      ports = list(string)
+      }))
+  }))
+}
+
 variable "networks" {
   type = map(object({
     name = string
