@@ -93,27 +93,6 @@ resource "dcnm_vrf" "vrfs" {
 
 
 ## Build New VPC Interface ##
-// resource "dcnm_interface" "vpc11" {
-//   policy                  = "int_vpc_trunk_host_11_1"
-//   type                    = "vpc"
-//   name                    = "vPC11"
-//   fabric_name             = var.dcnm_fabric
-//   switch_name_1           = "DC3-LEAF-1"
-//   switch_name_2           = "DC3-LEAF-2"
-//   vpc_peer1_id            = 11
-//   vpc_peer2_id            = 11
-//   mode                    = "active"
-//   bpdu_gaurd_flag         = "true"
-//   mtu                     = "default"
-//   vpc_peer1_allowed_vlans = "none"
-//   vpc_peer2_allowed_vlans = "none"
-//   // vpc_peer1_access_vlans  = "10"
-//   // vpc_peer2_access_vlans  = "20"
-//   vpc_peer1_interface     = ["Ethernet1/11"]
-//   vpc_peer2_interface     = ["Ethernet1/11"]
-// }
-
-
 resource "dcnm_interface" "vpc" {
   for_each = var.vpc_interfaces
 
