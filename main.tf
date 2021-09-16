@@ -96,7 +96,7 @@ resource "dcnm_vrf" "vrfs" {
 resource "dcnm_interface" "vpc11" {
   policy                  = "int_vpc_trunk_host_11_1"
   type                    = "vpc"
-  name                    = "vpc11"
+  name                    = "vPC11"
   fabric_name             = var.dcnm_fabric
   switch_name_1           = "DC3-LEAF-1"
   switch_name_2           = "DC3-LEAF-2"
