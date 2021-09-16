@@ -41,7 +41,7 @@ vrfs = {
 ### INTERFACES ###
 vpc_interfaces = {
   vpc10 = {
-    name = "vpc10"
+    name = "vPC10"
     vpc_id = 10
     switch1 = {
       name = "DC3-LEAF-1"
