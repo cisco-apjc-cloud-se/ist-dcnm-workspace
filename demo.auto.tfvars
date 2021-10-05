@@ -35,6 +35,13 @@ vrfs = {
       "DC3-BORDER-1",
       "DC3-BORDER-2"
     ]
+  },
+  TFCB-VRF-3 = {
+    name = "TFCB-VRF-3"
+    description = "VRF Created by Terraform Plan #3"
+    vni_id = 33003
+    vlan_id = 3003
+    deploy = false
   }
 }
 
