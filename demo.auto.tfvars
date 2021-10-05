@@ -42,6 +42,7 @@ vrfs = {
     vni_id = 33003
     vlan_id = 3003
     deploy = false
+    attached_switches = []
   }
 }
 
