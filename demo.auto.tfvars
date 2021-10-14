@@ -8,6 +8,68 @@ switches = [
   "DC3-BORDER-2"
 ]
 
+"vpc_interfaces": {
+  "vpc5": {
+    "name": "vPC5",
+    "vpc_id": 5,
+    "switch1": {
+      "name": "DC3-LEAF-1",
+      "ports": ["Eth1/5"]
+    },
+    "switch2": {
+      "name": "DC3-LEAF-2",
+      "ports": ["Eth1/5"]
+    }
+  },
+  "vpc6": {
+    "name": "vPC6",
+    "vpc_id": 6,
+    "switch1": {
+      "name": "DC3-LEAF-1",
+      "ports": ["Eth1/6"]
+    },
+    "switch2": {
+      "name": "DC3-LEAF-2",
+      "ports": ["Eth1/6"]
+    }
+  }
+},
+### VPC Interfaces ###
+vpc_interfaces = {
+  vpc12 = {
+    name = "vpc12"
+    vpc_id = 12
+    switch1 = {
+      name = "DC3-LEAF-1"
+      ports = [
+        "Eth1/12"
+      ]
+    }
+    switch2 = {
+      name = "DC3-LEAF-2"
+      ports = [
+        "Eth1/12"
+      ]
+    }
+  }
+  vpc13 = {
+    name = "vpc13"
+    vpc_id = 13
+    switch1 = {
+      name = "DC3-LEAF-1"
+      ports = [
+        "Eth1/13"
+      ]
+    }
+    switch2 = {
+      name = "DC3-LEAF-2"
+      ports = [
+        "Eth1/13"
+      ]
+    }
+  }
+}
+
 ### VRFS ###
 vrfs = {
   TFCB-VRF-1 = {

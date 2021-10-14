@@ -34,22 +34,12 @@ data "dcnm_inventory" "switches" {
 
 ## Build Local Dictionaries
 # - serial_numbers: Switch Name -> Serial Number
-# - merged: cluster_interfaces with added serial_number
 
 locals {
   serial_numbers = {
       for switch in data.dcnm_inventory.switches :
           switch.switch_name => switch.serial_number
   }
-  // merged_cluster_interfaces = {
-  //   for switch in var.cluster_interfaces :
-  //       switch.name => {
-  //         name = switch.name
-  //         attach = switch.attach
-  //         switch_ports = switch.switch_ports
-  //         serial_number = lookup(local.serial_numbers, switch.name)
-  //       }
-  // }
 }
 
 ## Build New VRFs ###
@@ -145,6 +135,7 @@ resource "dcnm_network" "networks" {
   # rt_both_flag    = true
   # trm_enable_flag = true
   l3_gateway_flag = true
+  template        = "MODIFIED_Network_Universal"
   deploy          = each.value.deploy
 
   dynamic "attachments" {
