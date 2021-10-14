@@ -8,32 +8,6 @@ switches = [
   "DC3-BORDER-2"
 ]
 
-"vpc_interfaces": {
-  "vpc5": {
-    "name": "vPC5",
-    "vpc_id": 5,
-    "switch1": {
-      "name": "DC3-LEAF-1",
-      "ports": ["Eth1/5"]
-    },
-    "switch2": {
-      "name": "DC3-LEAF-2",
-      "ports": ["Eth1/5"]
-    }
-  },
-  "vpc6": {
-    "name": "vPC6",
-    "vpc_id": 6,
-    "switch1": {
-      "name": "DC3-LEAF-1",
-      "ports": ["Eth1/6"]
-    },
-    "switch2": {
-      "name": "DC3-LEAF-2",
-      "ports": ["Eth1/6"]
-    }
-  }
-},
 ### VPC Interfaces ###
 vpc_interfaces = {
   vpc12 = {
