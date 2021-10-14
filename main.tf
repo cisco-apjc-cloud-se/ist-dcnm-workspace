@@ -82,7 +82,7 @@ resource "dcnm_vrf" "vrfs" {
 }
 
 
-## Build New VPC Interface ##
+## Build New VPC Interfaces ##
 resource "dcnm_interface" "vpc" {
   for_each = var.vpc_interfaces
 
