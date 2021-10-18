@@ -1,5 +1,7 @@
 # Intersight Service for Terraform Demo with Nexus Dashboard Fabric Controller (a.k.a DCNM)- Common Overlay Configuration
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/cisco-apjc-cloud-se/ist-dcnm-workspace)
+
 ## Overview
 This use focuses on the basic overlay configuration for common Day 2 DC networking tasks.
 
