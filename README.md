@@ -4,6 +4,7 @@ Intersight Service for Terraform Demo with Nexus Dashboard Fabric Controller (a.
 This includes configuring
 - VRFs
 - Networks
+- vPC Interfaces
 
 Options to extend:
 - IPAM integration to add/update subnets, VLAN IDs

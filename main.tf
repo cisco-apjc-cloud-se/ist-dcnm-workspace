@@ -140,14 +140,15 @@ resource "dcnm_network" "networks" {
 
   dynamic "attachments" {
     # for_each = each.value.attachments
-    for_each = toset(each.value.attached_switches)
+    // for_each = toset(each.value.attached_switches)
+    for_each = each.value.attached_switches
     content {
       serial_number = lookup(local.serial_numbers, attachments.key)
       vlan_id       = each.value.vlan_id
       attach        = true
-      // switch_ports  = attachments.value["switch_ports"]
+      switch_ports  = attachments.value["switch_ports"]
     }
   }
 
-  depends_on = [dcnm_vrf.vrfs]
+  depends_on = [dcnm_vrf.vrfs, dcnm_interface.vpc]
 }

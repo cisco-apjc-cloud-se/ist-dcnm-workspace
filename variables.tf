@@ -55,6 +55,9 @@ variable "networks" {
     vni_id = number
     vlan_id = number
     deploy = bool
-    attached_switches = list(string)
+    attached_switches = map(object({
+      name = string
+      switch_ports = list(string)
+      }))
   }))
 }

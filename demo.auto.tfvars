@@ -72,12 +72,20 @@ networks = {
     vni_id = 33101
     vlan_id = 3101
     deploy = true
-    attached_switches = [
-      "DC3-LEAF-1",
-      "DC3-LEAF-2"
-      # "DC3-BORDER-1",
-      # "DC3-BORDER-2"
-    ]
+    attached_switches = {
+      DC3-LEAF-1 = {
+        name = "DC3-LEAF-1"
+        switch_ports = [
+          "Port-channel10"
+        ]
+      }
+      DC3-LEAF-2 = {
+        name = "DC3-LEAF-2"
+        switch_ports = [
+          "Port-channel10"
+        ]
+      }
+    }
   }
   TFCB-NET-2 = {
     name = "TFCB-NET-2"
@@ -87,12 +95,20 @@ networks = {
     vni_id = 33102
     vlan_id = 3102
     deploy = true
-    attached_switches = [
-      "DC3-LEAF-1",
-      "DC3-LEAF-2"
-      # "DC3-BORDER-1",
-      # "DC3-BORDER-2"
-    ]
+    attached_switches = {
+      DC3-LEAF-1 = {
+        name = "DC3-LEAF-1"
+        switch_ports = [
+          "Port-channel10"
+        ]
+      }
+      DC3-LEAF-2 = {
+        name = "DC3-LEAF-2"
+        switch_ports = [
+          "Port-channel10"
+        ]
+      }
+    }
   }
   TFCB-NET-3 = {
     name = "TFCB-NET-3"
@@ -102,9 +118,19 @@ networks = {
     vni_id = 33103
     vlan_id = 3103
     deploy = true
-    attached_switches = [
-      "DC3-LEAF-1",
-      "DC3-LEAF-2"
-    ]
+    attached_switches = {
+      DC3-LEAF-1 = {
+        name = "DC3-LEAF-1"
+        switch_ports = [
+          "Port-channel10"
+        ]
+      }
+      DC3-LEAF-2 = {
+        name = "DC3-LEAF-2"
+        switch_ports = [
+          "Port-channel10"
+        ]
+      }
+    }
   }
 }
