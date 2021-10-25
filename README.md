@@ -240,3 +240,6 @@ Changes to the variables defined in the input variable files will result in dyna
 * Adding a new VRF entry will create a new DCNM VRF template instance and deploy this VRF to the associated switches.
 * Adding a new vPC interface will create a new vPC interface template instace and local port-channel logical interfaces to each switch.
 * Adding a Network entry will create a new DCNM Network template instance and deploy this network to the associated switches, as well as trunk to the associated switch interfaces.
+
+## Related Sandbox
+[Open NXOS Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/0e22761d-f813-415d-a557-24fa0e17ab50?diagramType=Topology)
