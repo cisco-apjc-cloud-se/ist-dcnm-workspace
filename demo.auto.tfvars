@@ -1,12 +1,28 @@
+### Platform Type  - DCNM or ND ###
+platform = "nd"
+
+### Target Fabric - no supports MSD/Multi-Site Fabrics ###
 dcnm_fabric = "DC3"
 
 ### FABRIC INVENTORY ###
-switches = [
-  "DC3-LEAF-1",
-  "DC3-LEAF-2",
-  "DC3-BORDER-1",
-  "DC3-BORDER-2"
-]
+switches = {
+  dc3-leaf-1 = {
+    name    = "DC3-LEAF-1"
+    fabric  = "DC3"
+  }
+  dc3-leaf-2 = {
+    name    = "DC3-LEAF-2"
+    fabric  = "DC3"
+  }
+  dc3-border-1 = {
+    name    = "DC3-BORDER-1"
+    fabric  = "DC3"
+  }
+  dc3-border-2 = {
+    name    = "DC3-BORDER-2"
+    fabric  = "DC3"
+  }
+}
 
 ### VRFS ###
 vrfs = {

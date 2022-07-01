@@ -21,17 +21,16 @@ provider "dcnm" {
   password = var.dcnm_password
   url      = var.dcnm_url
   insecure = true
+  platform  = var.platform
 }
 
 ## Read Switch Inventory ##
 data "dcnm_inventory" "switches" {
-  # for_each = transpose(var.dc_switches)
-  for_each = toset(var.switches)
+  for_each = var.switches
 
-  fabric_name = var.dcnm_fabric
-  switch_name = each.key
+  fabric_name = each.value.fabric
+  switch_name = each.value.name
 }
-
 ## Build Local Dictionaries
 # - serial_numbers: Switch Name -> Serial Number
 
@@ -95,7 +94,7 @@ resource "dcnm_interface" "vpc" {
   vpc_peer1_id            = each.value.vpc_id
   vpc_peer2_id            = each.value.vpc_id
   mode                    = "active"
-  bpdu_gaurd_flag         = "true"
+  bpdu_guard_flag         = "true"
   mtu                     = "default"
   vpc_peer1_allowed_vlans = "none"
   vpc_peer2_allowed_vlans = "none"

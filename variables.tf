@@ -16,6 +16,10 @@ variable "dcnm_fabric" {
   type = string
 }
 
+variable "platform" {
+  type = string
+}
+
 variable "switches" {
   type = list(string)
 }
